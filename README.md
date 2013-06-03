@@ -1,8 +1,11 @@
-sublime-ariatemplates-highlighter
+Sublime Text - Aria Templates Highlighter
 =======================================
 
-How to install AriaTemplates highlighter for Sublime Text 2
-=====================================================
+Syntax Highlighter for Aria Templates in Sublime Text Editor.
+![Preview template](https://raw.github.com/ariatemplates/editors-tools/master/sublime/preview-1.png "Preview template")
+
+Installation guide
+------------------
 (Was submitted to wbond's package control, but meanwhile)
 
 1. Download "Aria Templates.tmLanguage"
@@ -14,8 +17,8 @@ How to install AriaTemplates highlighter for Sublime Text 2
 
 Developed with Monokai theme. Should be compatible with other themes nicely.
 
-How to improve/change it ?
-==========================
+Contribute
+----------
 
 1. Go read this http://docs.sublimetext.info/en/latest/extensibility/syntaxdefs.html 
 2. Install AAAPackageDev if not done already
@@ -23,9 +26,5 @@ How to improve/change it ?
 
 AAAPackageDev takes care of translating the JSON version of the syntax definition to the much harder to read XML format.
 
-Screenshots
-===========
 
-![Preview template](https://raw.github.com/ariatemplates/editors-tools/master/sublime/preview-1.png "Preview template")
-![Preview css-template](https://raw.github.com/ariatemplates/editors-tools/master/sublime/preview-2.png "Preview css-template")
 
