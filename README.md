@@ -6,7 +6,13 @@ Syntax Highlighter for Aria Templates in Sublime Text Editor.
 
 Installation guide
 ------------------
-(Was submitted to wbond's package control, but meanwhile)
+**With Package Control:**
+
+The easiest way to install is through [Package Control](http://wbond.net/sublime_packages/package_control/installation)
+
+Once you install Package Control, restart Sublime Text 2, bring up the Command Palette (`Command+Shift+P` on OS X, `Control+Shift+P` on Linux/Windows). Select "Package Control: Install Package", then select [AriaTemplates Highlighter](https://sublime.wbond.net/packages/AriaTemplates%20Highlighter). This method will automatically keep AriaTemplates Highligher up to date.
+
+**Manual Installation:**
 
 1. Download "Aria Templates.tmLanguage"
 2. Go to your packages (in Sublime : Preferences > Browse Packages...)
