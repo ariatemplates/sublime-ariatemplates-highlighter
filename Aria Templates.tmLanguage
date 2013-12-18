@@ -82,11 +82,23 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>source.css</string>
+					<string>#quoted-strings</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>source.js</string>
+					<string>#css-simple-selector</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#css-simple-rule</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#css-constants</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#css-url</string>
 				</dict>
 			</array>
 		</dict>
@@ -283,6 +295,87 @@
 			<string>(//).*$\n?</string>
 			<key>name</key>
 			<string>comment.line.double.slash.tpl</string>
+		</dict>
+		<key>css-constants</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.unit.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.unit.css</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(\-?\d?\.?\d+|\#[0-9a-fA-F]{3,6})(\%|[a-z]+)?</string>
+		</dict>
+		<key>css-simple-rule</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.type.property-name.tpl</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>([a-z0-9\-\@]+)(\s*\:)</string>
+		</dict>
+		<key>css-simple-selector</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.attribute-name.class.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>string.quoted.single.html</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>string.quoted.single.html</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>((?:[a-zA-Z0-9\-_\.\:\&gt;\#\+](\[[^\]]+\])?)+(?:[ a-zA-Z0-9\-_\.\:\&gt;\#\+](\[[^\]]+\])?)*)\s*(\,|\{)</string>
+		</dict>
+		<key>css-url</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>string.quoted.single.html</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>url\(([^\)]+)\)</string>
+		</dict>
+		<key>quoted-strings</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#tag-string-double-quoted</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#tag-string-single-quoted</string>
+				</dict>
+			</array>
 		</dict>
 		<key>tag-entities</key>
 		<dict>
